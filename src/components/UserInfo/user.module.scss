@@ -1,0 +1,56 @@
+.User {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 14px;
+  padding-right: 15px;
+  &__leftSide {
+    display: flex;
+    gap: 7px;
+
+    &_avatar {
+      height: 40px;
+      width: 40px;
+    }
+    &_accountInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      padding-top: 5px;
+      & .name {
+        letter-spacing: -0.35px;
+        font-size: 14px;
+        & .lastName {
+          letter-spacing: 0;
+        }
+      }
+
+      & .emailContainer {
+        display: flex;
+        gap: 2px;
+        color: #9c9c9e;
+        & > .email {
+          font-family: "Poppins", sans-serif;
+          font-size: 11px;
+          margin-left: 1px;
+          letter-spacing: -1px;
+        }
+        & > .arrowsContainer {
+          display: flex;
+          flex-direction: column;
+          & svg:nth-child(1) {
+            transform: rotate(180deg);
+          }
+          & svg:nth-child(2) {
+            margin-top: -5px;
+          }
+        }
+      }
+    }
+  }
+  &__search {
+    margin-top: -3px;
+    color: #9c9c9e;
+  }
+}

@@ -1,0 +1,36 @@
+.Input {
+  display: flex;
+  padding: 0 15px;
+  background-color: rgba(37, 37, 37, 0.723);
+  height: 53px;
+  border-radius: 5px;
+  align-items: center;
+  color: white;
+  gap: 15px;
+  cursor: pointer;
+  margin-bottom: 150px;
+  &__button {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 25px;
+    height: 23px;
+    padding: 0;
+  }
+  &__input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0 15px;
+    color: white;
+    &::placeholder {
+      color: white;
+      opacity: 0.8;
+    }
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

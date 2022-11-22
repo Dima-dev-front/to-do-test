@@ -1,0 +1,14 @@
+.Sections {
+  margin-top: 5px;
+  overflow-y: auto;
+  height: calc(100% - 101.8px);
+  padding-bottom: 20px;
+
+  &__separator {
+    margin-top: 12px;
+    margin-left: 14px;
+    margin-right: 15px;
+    border-bottom: 1px solid #eaebeb;
+    margin-bottom: 12px;
+  }
+}

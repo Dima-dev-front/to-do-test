@@ -1,0 +1,53 @@
+.Item {
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 53px;
+  margin-bottom: 7px;
+  padding: 0 22px 0 15px;
+  align-items: center;
+  &__title {
+    flex-grow: 1;
+    padding-left: 31px;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+  }
+  &__completed {
+    position: relative;
+    appearance: none;
+    cursor: pointer;
+    &:before {
+      content: "";
+      display: block;
+      border-radius: 50%;
+      height: 19px;
+      width: 19px;
+      border: 2px solid #737373;
+      position: absolute;
+      left: -4.5px;
+      top: -11px;
+    }
+    &:hover {
+      &:before {
+        content: "✓";
+        text-align: center;
+        color: #737373;
+        font-weight: bolder;
+      }
+    }
+    &:checked {
+      &:before {
+        content: "✓";
+        text-align: center;
+        color: #737373;
+        font-weight: bolder;
+        background-color: white;
+      }
+    }
+  }
+  &__icon {
+    margin-top: 6px;
+    cursor: pointer;
+  }
+}
